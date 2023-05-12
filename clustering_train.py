@@ -20,9 +20,9 @@ from langdetect import detect
 import emoji
 
 #loading the dataset and doing preprocessing 
-df_init = pd.read_csv("python_projects/sample_tweets_sav.csv")
+df_init = pd.read_csv("sample_final_sav.csv")
 
-df = df_init.sample(frac = 0.005)
+df = df_init.sample(frac = 0.2)
 
 del df['Unnamed: 0']
 
@@ -183,7 +183,7 @@ result = {"intents": intents}
 # Conversion en json et ecriture dans un fichier .json 
 json_data = json.dumps(result, indent=4)
 
-with open("C:/Users/mimil/programmation/python_projects/chatbot_project/intents_final1.json", "w") as file:
+with open("intents_final1.json", "w") as file:
     file.write(json_data)
 
 
