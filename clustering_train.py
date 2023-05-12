@@ -22,7 +22,7 @@ import emoji
 #loading the dataset and doing preprocessing 
 df_init = pd.read_csv("sample_final_sav.csv")
 
-df = df_init.sample(frac = 0.2)
+df = df_init.sample(frac = 0.1)
 
 del df['Unnamed: 0']
 
