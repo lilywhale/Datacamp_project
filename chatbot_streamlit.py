@@ -18,7 +18,7 @@ with open('intents_corrected.json', 'r') as json_data:
     intents = json.load(json_data)
 
 # Here to use the original data you need to use data1.pth
-FILE = "data_corredcted.pth"
+FILE = "data_corrected.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
