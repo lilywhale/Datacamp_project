@@ -12,10 +12,13 @@ from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intents_final1.json', 'r') as json_data:
+
+#If you want to use the original dataset change the name to intents_final1.json
+with open('intents_corrected.json', 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "data1.pth"
+# Here to use the original data you need to use data1.pth
+FILE = "data_corredcted.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
