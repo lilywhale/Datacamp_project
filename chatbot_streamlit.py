@@ -3,7 +3,8 @@ from streamlit_chat import message as st_message
 
 import random
 import json
-
+import nltk
+nltk.download('punkt')
 import torch
 import numpy
 from model import NeuralNet
