@@ -8,6 +8,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
+#If you want to use the initial project json file change it to intents_final1.json
 with open('intents_final1.json', 'r') as f:
     intents = json.load(f)
 
