@@ -1,0 +1,119 @@
+{
+    "intents": [
+      {
+        "tag": "hello",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi , how can I help?"
+        ]
+      },
+      {
+        "tag": "Bye",
+        "patterns": ["Bye", 
+            "See you later", 
+            "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! I hope I was able to help"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "items",
+        "patterns": [
+          "Which items do you have?",
+          "What kinds of items are there?",
+          "What do you sell?"
+        ],
+        "responses": [
+          "We sell a large variety of clothing and accesories",
+          "We have the most fashonable and affordable item of clothing and accessories"
+        ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "How much time will my refund take"
+        ],
+        "responses": [
+          "We accept VISA, Mastercard and Paypal",
+          "We accept most major credit cards, and Paypal",
+          "Depending on your bank a refund can take 2 weeks before appearing in your account"
+        ]
+      },
+      {
+        "tag": "delivery",
+        "patterns": [
+          "How long does delivery take?",
+          "How long does shipping take?",
+          "When do I get my delivery?"
+        ],
+        "responses": [
+          "Delivery takes 2-4 days",
+          "Shipping takes 2-4 days"
+        ]
+      },
+      {
+        "tag": "Bugs",
+        "patterns": [
+          "The website doesn't work",
+          "I am not able to see my order on the website",
+          "My cart keep being deleted on the website"
+        ],
+        "responses": [
+          "We are sorry for the inconveniance, our team is currently looking into it",
+          "Try relaunching your browser after deleting cache",
+          "Try allowing cookies, or relaunching your browser"
+        ]
+      },
+      {
+        "tag": "Problem delivery",
+        "patterns": [
+          "My order is one week late",
+          "I recieved my order damaged",
+          "How can I track my order",
+          "My order is lost"
+        ],
+        "responses": [
+          "We are sorry for the inconveniance, you can ask for refund if your order is more than 2 weeks late",
+          "If your order is damaged you can fill a refund form on the website by going in you past orders page",
+          "You can track your order with the link that will be sent your order is shipped.",
+          "If your order is more than to weeks late you can ask for a refund or a free reorder on the website"
+        ]
+      },
+      {
+        "tag": "Problem order",
+        "patterns": [
+          "The sizing is all over the place",
+          "I got the wrong size",
+          "All my items are too small",
+          "All my items are too big",
+          "I recieved the wrong color for my order"
+        ],
+        "responses": [
+          "We are sorry for the inconveniance, you can see sizing details when placing the order",
+          "If all your items are too small/big you can send them back to us in order to recieve your order again",
+          "If you recieved the wrong size you can ask for a refund or send them back to us",
+          "I see we made a mistake on the color, you can fill out a complaint report to maybe get a discount next time"
+        ]
+      }
+    ]
+  }
