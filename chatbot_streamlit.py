@@ -40,14 +40,12 @@ if "history" not in st.session_state:
 
 st.title("Customer Service Chatbot")
 
-st.write(" Here are a few example of things you can ask to the customer support bot")
-st.write("  - When are you going to add the rick and morty season 3")
-st.write("  - Why is the update making my phone crash everyday ? ")
-st.write("  - If I purchase a flight with miles will i get a discount")
-st.write("  - How can I track my order")
-st.write("  - Are you guys looking into the problem ?")
-
-st.write("You can also tell the bot about your customer experience.")
+st.write(" Here are a few example of things you can ask to the customer support bot for our clothing store")
+st.write("  - payement methods")
+st.write("  - problems with order")
+st.write("  - bugs with our website")
+st.write("  - problems with delivery")
+st.write("  - the items we sell")
 st.caption("Tip to delete your last query faster ctrl+A and delete ;-)")
 
 
@@ -77,7 +75,8 @@ def generate_answer():
     else:
         st.session_state.history.append({"message": "I do not understand...", "is_user": False})
 
-
+if st.button("Clear History"):
+    st.session_state.history = []
 
 
 st.text_input("Talk to the bot", key="input_text", on_change=generate_answer)
